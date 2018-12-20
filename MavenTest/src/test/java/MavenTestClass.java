@@ -7,7 +7,7 @@ import org.openqa.selenium.By;
 		import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
 		
-public class Cllsa {
+public class MavenTestClass {
 
 	public static void main(String[] args) {
 	
