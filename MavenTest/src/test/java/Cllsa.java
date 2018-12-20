@@ -5,16 +5,17 @@ import org.openqa.selenium.By;
 		import org.openqa.selenium.WebDriver;
 		import org.openqa.selenium.WebElement;
 		import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.firefox.FirefoxDriver;
 		
 public class Cllsa {
 
 	public static void main(String[] args) {
 	
-				System.setProperty("webdriver.chrome.driver", "C:\\Users\\Abhirup Subba\\Downloads\\chromedriver_win32\\chromedriver.exe");
-				WebDriver driver=new ChromeDriver(); 	
+		System.setProperty("webdriver.gecko.driver","C:\\Users\\Abhirup Subba\\Downloads\\geckodriver-v0.23.0-win64\\geckodriver.exe");
+		WebDriver driver = new FirefoxDriver();
 		
-				
-				driver.get("https://www.google.com/");
+		 // launch Fire fox and direct it to the Base URL
+        driver.get("https://www.target.com/");
 				
 			     driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
 				driver.close();
